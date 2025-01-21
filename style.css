@@ -26,7 +26,7 @@ header nav {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  background-color: brown;
+
 }
 .logo-box {
   width: 202px;
@@ -34,7 +34,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: start;
-  background-color: chartreuse;
+
 }
 .logo-box > img {
   width: 62px;
@@ -53,7 +53,7 @@ header nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: aqua;
+
 }
 .menu-box ul {
   display: flex;
@@ -67,7 +67,6 @@ header nav {
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
-  color: red;
 }
 .menu-box ul li > a {
   margin-left: 0;
