@@ -3,12 +3,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 body {
   width: 100vw;
   height: 100vh;
   font-family: "Quicksand", serif;
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 header {
