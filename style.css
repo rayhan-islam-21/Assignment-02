@@ -242,7 +242,7 @@ header nav {
 
 /* Stories */
 .story {
-  width: 100vw;
+  width: 1440px;
   height: 1018.02px;
   display: flex;
   flex-direction: column;
@@ -498,7 +498,6 @@ header nav {
     align-items: center;
     gap: 20;
     padding: 40px 0px 40px 0px;
-    border: 2px solid gold;
   }
   .curriculum > h2 {
     color: rgb(0, 0, 0);
@@ -613,6 +612,9 @@ header nav {
     height: 74px;
     border-radius: 9.53px;
     background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: start;
   }
   .text-container > h4 {
     width: 117.92px;
