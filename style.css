@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 body {
   width: 100vw;
@@ -12,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 marquee{
@@ -528,8 +530,18 @@ footer {
   text-align: left;
 }
 @media screen and (max-width: 576px) {
+
+  html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+
   header {
-    width: 390px;
+    max-width: 390px;
     height: 795px;
     padding: 12px 16px;
     display: flex;
@@ -538,19 +550,19 @@ footer {
     justify-content: start;
   }
   header nav {
-    width: 358px;
+    max-width: 358px;
     height: 46px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   .hr {
-    width: 390px;
+    width:390px;
     margin-top: 5px;
-    border: 0.5px solid rgb(254, 163, 1);
+    border: 2px solid rgb(254, 163, 1);
   }
   .logo-box > img {
-    width: 46px;
+    max-width: 46px;
     height: 46px;
   }
   .logo-box > h1 {
@@ -564,7 +576,7 @@ footer {
     display: none;
   }
   .bar-box {
-    width: 30px;
+    max-width: 30px;
     height: 46px;
     display: flex;
     align-items: center;
@@ -578,20 +590,20 @@ footer {
   /* hero section */
 
   .hero {
-    width: 357px;
+    max-width: 357px;
     height: 749px;
     flex-direction: column-reverse;
     padding: 20px 0px 20px 0px;
   }
   .hero-img {
-    width: 336px;
+    max-width: 336px;
     height: 413px;
   }
   .hero-img > img {
-    width: 100%;
+    max-width: 100%;
   }
   .hero-text {
-    width: 357px;
+    max-width: 357px;
     height: 252px;
     padding: 0px;
     margin: 20px 0px;
@@ -600,7 +612,7 @@ footer {
     gap: 22px;
   }
   .hero .hero-text > h1 {
-    width: 357px;
+    max-width: 357px;
     height: 120px;
     font-size: 2rem !important;
     font-weight: 700;
@@ -608,7 +620,7 @@ footer {
     line-height: 38px;
   }
   .hero .hero-text > p {
-    width: 357px;
+    max-width: 357px;
     height: 54px;
     color: rgb(17, 17, 17);
     font-size: 0.875rem !important;
@@ -617,7 +629,7 @@ footer {
     text-align: center;
   }
   .hero-text button {
-    width: 131px;
+    max-width: 131px;
     height: 42px;
     padding: 6px 24px 6px 24px;
     border-radius: 8px;
@@ -634,7 +646,7 @@ footer {
   /* curriculum */
   .curriculum {
     flex-direction: column;
-    width: 390px;
+    max-width: 390px;
     height: 1240px;
     justify-content: start;
     align-items: center;
@@ -650,7 +662,7 @@ footer {
     margin: 0;
   }
   .box-container {
-    width: 357px;
+    max-width: 357px;
     height: 760px;
     display: flex;
     flex-direction: column;
@@ -659,14 +671,14 @@ footer {
     padding: 15px;
   }
   .box {
-    width: 357px;
+    max-width: 357px;
     height: 322px;
     gap: 22px;
     padding: 36px 28px 36px 28px;
     margin: 10px 0px;
   }
   .box img {
-    width: 88.49px;
+    max-width: 88.49px;
     height: 75.79px;
   }
   .box > h3 {
@@ -678,7 +690,7 @@ footer {
     text-align: center;
   }
   .box > p {
-    width: 193.81px;
+    max-width: 193.81px;
     height: 50.45px;
     color: rgb(128, 128, 128);
     font-size: 0.638rem;
@@ -698,7 +710,7 @@ footer {
   /* stories */
 
   .story {
-    width: 390px;
+    max-width: 100%;
     height: 760px;
     flex-direction: column;
     justify-content: space-around;
@@ -717,7 +729,7 @@ footer {
   }
 
   .img-container {
-    width: 360px;
+    max-width: 360px;
     height: 560px;
     margin: 20px 0px;
     display: flex;
@@ -726,7 +738,7 @@ footer {
     justify-content: start;
   }
   .right-img {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     flex-direction: row;
     align-items: start;
@@ -736,21 +748,21 @@ footer {
   }
 
   .images-box {
-    width: 173px;
+    max-width: 173px;
     height: 179px;
     border-radius: 9.53px;
     background: rgb(255, 255, 255);
   }
   .images-box .img-holder {
     border-radius: 9.53px 9.53px 0px 0px;
-    width: 173px;
+    max-width: 173px;
     height: 105px;
   }
   .img-holder > img {
     width: 100%;
   }
   .text-container {
-    width: 173.09px;
+    max-width: 173.09px;
     height: 74px;
     border-radius: 9.53px;
     background: rgb(255, 255, 255);
@@ -759,7 +771,7 @@ footer {
     justify-content: start;
   }
   .text-container > h4 {
-    width: 117.92px;
+    max-width: 117.92px;
     height: 28.54px;
     color: rgb(0, 0, 0);
     font-size: 0.57rem;
@@ -770,7 +782,7 @@ footer {
   }
   .second-date {
     position: absolute;
-    width: 103.91px;
+    max-width: 103.91px;
     height: 22.83px;
     left: 22.83px;
     top: 93.96px;
@@ -785,7 +797,7 @@ footer {
     text-transform: capitalize;
   }
   .viewall {
-    width: 134px;
+    max-width: 134px;
     height: 30px;
     display: flex;
     flex-direction: row;
@@ -807,13 +819,13 @@ footer {
   /* footer area */
 
   footer {
-    width: 390px;
+    max-width: 100%;
     height: 642px;
     background: rgb(1, 172, 253);
     padding: 40px 0px;
   }
   .footer-box {
-    width: 377px;
+    max-width: 377px;
     height: 570px;
     flex-direction: column;
     align-items: start;
@@ -821,7 +833,7 @@ footer {
     gap: 20px;
   }
   .left {
-    width: 360px;
+    max-width: 360px;
     height: 170px;
     display: flex;
     flex-direction: column;
@@ -829,7 +841,7 @@ footer {
     align-items: start;
   }
   .left > p {
-    width: 357px;
+    max-width: 357px;
     height: 80px;
     color: rgb(255, 255, 255);
     font-size: 1rem;
@@ -839,11 +851,11 @@ footer {
     text-align: left;
   }
   .first-box {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
   .first-box > h2 {
-    width: 172px;
+    max-width: 172px;
     height: 67px;
     color: rgb(255, 255, 255);
     font-size: 2.23rem;
@@ -853,11 +865,11 @@ footer {
     text-align: left;
   }
   .first-box > img {
-    width: 69px;
+    max-width: 69px;
     height: 69px;
   }
   .middle {
-    width: 129px;
+    max-width: 129px;
     height: 188.02px;
   }
   .middle > h2 {
@@ -880,7 +892,7 @@ footer {
     text-align: left;
   }
   .right {
-    width: 180px;
+    max-width: 180px;
     height: auto;
   }
   .right > h2 {
@@ -892,11 +904,11 @@ footer {
     text-align: left;
   }
   .right img{
-    width: 33px;
+    max-width: 33px;
     height: 33px;
   }
   marquee{
-    width: 390px;
+    max-width: 390px;
     height: 20px;
     font-size: 1rem;
     margin-bottom: 15px;
