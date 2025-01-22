@@ -14,6 +14,19 @@ body {
   margin: 0 auto;
 }
 
+marquee{
+  width: 1160px;
+  height: 150px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
 header {
   width: 1440px;
   height: 759px;
@@ -237,15 +250,20 @@ header nav {
   gap: 10px;
   margin: 0 auto;
   margin-top: 80px;
+  transition: all 0.1s ease-in;
+ 
 }
 .icon i {
   font-size: 3rem;
   color: rgb(254, 163, 1);
+  &:hover{
+    color: red;
+  }
 }
 
 /* Stories */
 .story {
-  width: 1440px;
+  width: 100%;
   height: 1018.02px;
   display: flex;
   flex-direction: column;
@@ -411,7 +429,7 @@ header nav {
   }
 }
 footer {
-  width: 1440px;
+  width: 100%;
   height: 519px;
   background: rgb(1, 172, 253);
   display: flex;
@@ -440,11 +458,13 @@ footer {
   width: 299.71px;
   height: 81.65px;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .first-box > img {
   width: 82px;
   height: 82px;
+  position: relative;
+  left: -10px;
 }
 .first-box > h2 {
   color: rgb(255, 255, 255);
@@ -874,6 +894,12 @@ footer {
   .right img{
     width: 33px;
     height: 33px;
+  }
+  marquee{
+    width: 390px;
+    height: 20px;
+    font-size: 1rem;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 992px) {
